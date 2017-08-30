@@ -1,5 +1,4 @@
 package com.cg.playBook1.Controller;
-
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -70,7 +69,7 @@ public class PlayBookServlet extends HttpServlet {
 			try {
 			PlayBookBean status=IplyService.createAccount(plyBk);
 			if(status!=null){
-				view="view/index.html";
+				view="view/index.jsp";
 			}else{
 				System.out.println("login Failed");
 			}
