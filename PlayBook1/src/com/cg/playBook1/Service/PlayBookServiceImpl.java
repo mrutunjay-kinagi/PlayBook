@@ -17,7 +17,13 @@ IPlayBookDao IPlyBook=new PlayBookDaoImpl();
 	@Override
 	public PlayBookBean updateCrm(PlayBookBean plyBK) throws SQLException {
 		// TODO Auto-generated method stub
+	
 		return IPlyBook.updateCrm(plyBK);
+	}
+	@Override
+	public PlayBookBean fetchDetails(PlayBookBean plyBK) throws Exception {
+		// TODO Auto-generated method stub
+		return IPlyBook.fetchDetails(plyBK);
 	}
 
 }

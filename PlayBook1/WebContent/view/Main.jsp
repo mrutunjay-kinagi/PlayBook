@@ -2,10 +2,11 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<body>
-<!-- jap main -->
-<%@include file="header.jsp" %>
-    	<style>
+<<<<<<< HEAD
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<style>
   /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 40%;
@@ -82,9 +83,9 @@ span.psw {
     width: 85%; /* Could be more or less, depending on screen size */
 }
   </style>
-  <body background-color="#eee">
-	<!-- Start -->
-	<div class="container">
+<body>
+<%@include file="header.jsp" %>
+<div class="container">
 		<div class="row">
 			<div class="box">
 				<div class="col-md-6">
@@ -141,7 +142,7 @@ span.psw {
 
 			<div id="id02" class="modal">
   
-							  <form class="modal-content animate" action="/action_page.php" align="center">
+							  <form class="modal-content animate" action="submit.obj" align="center">
 								<div class="imgcontainer">
 								  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
 								  <img src="img_avatar2.png" alt="Avatar" class="avatar">
@@ -157,7 +158,6 @@ span.psw {
 									 </div>
 								  </form>
 								</div>
-							 
 	<!--about-->
 		<div class="container">
 			<div class="about">			

@@ -14,15 +14,14 @@ public static Connection getConnection(){
 	Connection con=null;
 	
 	try {
-		Class.forName("com.mysql.jdbc.Driver");  
-		con = DriverManager.getConnection(  
-		"jdbc:mysql://localhost:3306/PlayBook","root","Singh7964#");
-		System.out.println("Connection Established");
-		
+		Class.forName("oracle.jdbc.driver.OracleDriver");   
+		 con=DriverManager.getConnection(  
+			"jdbc:oracle:thin:@localhost:1521:xe","system","pwd");
+		System.out.println("connection");
 	} catch (Exception e) {
 		// TODO Auto-generated catch block
 		
-		e.printStackTrace();
+System.out.println(e);
 	}
 	return con;
 	

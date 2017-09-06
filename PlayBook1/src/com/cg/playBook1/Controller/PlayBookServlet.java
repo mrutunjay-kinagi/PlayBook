@@ -1,6 +1,8 @@
 package com.cg.playBook1.Controller;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -8,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.cg.playBook1.Bean.PlayBookBean;
 import com.cg.playBook1.Service.IPlayBookService;
@@ -20,6 +23,7 @@ import com.cg.playBook1.Util.PlayBookUtil;
 @WebServlet("*.obj")
 public class PlayBookServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	String email1;
       
     /**
      * @see HttpServlet#HttpServlet()
@@ -46,32 +50,32 @@ public class PlayBookServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //	PlayBookUtil.getConnection();
-		PlayBookBean plyBk=null;
-		IPlayBookService IplyService=null;
+		PlayBookBean plyBk=new PlayBookBean();
+		IPlayBookService IplyService=new PlayBookServiceImpl();
 		String view=null;
+		
+		 HttpSession session =null;
 		String reqPath=request.getServletPath();
 		System.out.println(reqPath);
+		PlayBookUtil.getConnection();
 		switch(reqPath){
         case "/home.obj":
         	
-        view="view/Main.html";
+        view="view/Main.jsp";
         break;
         case "/index.obj":
-        IplyService=new PlayBookServiceImpl();
+      
         String email=request.getParameter("uname"); 
-      //  String pass=request.getParameter("psw");	
-       // String cnfrmPass=request.getParameter("psw_repeat");
-       // System.out.println(email+" "+ pass);
-        plyBk=new PlayBookBean();
+         email1=email;
         plyBk.seteMail(email);
-      //  plyBk.setPass(pass);
-      //  plyBk.setCnfrmPass(cnfrmPass);
+    
 			try {
 			PlayBookBean status=IplyService.createAccount(plyBk);
 			if(status!=null){
-				view="view/index.jsp";
+				view="view/Nav.jsp";
 			}else{
-				System.out.println("login Failed");
+				request.setAttribute("msg", "Companey name already exist please load");
+				view="view/error.jsp";
 			}
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
@@ -81,24 +85,44 @@ public class PlayBookServlet extends HttpServlet {
             break;
         case "/CRM.obj":
         	
-            view="view/CRM.html";
+            view="view/CRM.jsp";
             break;
         case "/fn1_2.obj":
         	String fn1 = request.getParameter("fn1");
         	String fn2 = request.getParameter("fn2");
+        	plyBk.setFunctionality1(fn1);
+        	plyBk.setFunctionality2(fn2);
+        	plyBk.seteMail(email1);
+        	
+        System.out.println(fn1+"  "+fn2);
         	try {
-    			PlayBookBean status=IplyService.createAccount(plyBk);
-    			if(status!=null){
-    				view="view/index.html";
-    			}else{
-    				System.out.println("login Failed");
-    			}
-    			} catch (SQLException e) {
+    			PlayBookBean status=IplyService.updateCrm(plyBk);
+    			if(status!=null)
+    				view="view/index.jsp";
+    			
+    			} catch (Exception e) {
     				// TODO Auto-generated catch block
-    				e.printStackTrace();
+    				request.setAttribute("msg", "error logging in");
+    				 view="view/error.jsp";
     			}
-        	view="view/Main.html";
+        	
             break;  
+        case "/submit.obj":
+        	String username= request.getParameter("uname");
+        	plyBk.seteMail(username);
+        	try {
+				PlayBookBean status=IplyService.fetchDetails(plyBk);
+				System.out.println(status.getFunctionality1());
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				System.out.println(e);
+			}
+            view="view/index.jsp";
+            break;
+            
+        case "/methodology.obj":
+        	view="view/Methodology.jsp";
+            break;
             
         }
         if(view != null){
