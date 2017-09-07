@@ -83,7 +83,7 @@ span.psw {
     width: 85%; /* Could be more or less, depending on screen size */
 }
   </style>
-<body>
+  <body background-color="#eee">
 <%@include file="header.jsp" %>
 <div class="container">
 		<div class="row">
@@ -124,17 +124,15 @@ span.psw {
 			<div id="id01" class="modal">
 							  <form class="modal-content animate" action="index.obj" align="center">
 								<div class="imgcontainer">
-								  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-								  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+								  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span> 
 								</div>
 								<div class="container">
-								  <p><label><b>Username</b></label>
+								  <p><label><b>Username</b></label></p>
 								  <input type="text" placeholder="Enter Username" name="uname" required>
-									
-									  <p><button type="submit">Start</button>
+									  <p><button type="submit" class="cancelbtn"><b>Start</button>
 									</div>
 									<div class="container" style="background-color:#f1f1f1">
-									  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" align="center">Cancel</button>
+									  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" align="center"><b>Cancel</button>
 									 </div>
 								  </form>
 								</div>
@@ -144,17 +142,16 @@ span.psw {
   
 							  <form class="modal-content animate" action="submit.obj" align="center">
 								<div class="imgcontainer">
-								  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-								  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+								  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal"></span>
 								</div>
 								<div class="container">
 								  <p><label><b>Username</b></label>
 								  <input type="text" placeholder="Enter Username" name="uname" required>
 									
-									  <p><button type="submit">Load</button>
+									  <p><button type="button" class="cancelbtn"><b>Load</button>
 									</div>
 									<div class="container" style="background-color:#f1f1f1" >
-									  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn" align="center">Cancel</button>
+									  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn" align="center"><b>Cancel</button>
 									 </div>
 								  </form>
 								</div>
