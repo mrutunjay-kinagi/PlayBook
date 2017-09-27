@@ -47,7 +47,7 @@
 							<br/>
 							</p>
 							<div class="ficon">
-								<a href="Portal.html" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
+								<a href="Portal.obj" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
 							</div>
 						</div>
 					</div>
@@ -66,7 +66,7 @@
 							 <br/>
 							</p>
 							<div class="ficon">
-								<a href="CoreSystem.html" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
+								<a href="coreSys.obj" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>	
 							</div>
 						</div>
 					</div>
@@ -88,7 +88,7 @@
 							 This is just a demo version.This is just a demo version.This is just a demo version.
 							</p>
 							<div class="ficon">
-								<a href="Rating.html" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
+								<a href="Rating.obj" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
 							</div>
 						</div>
 					</div>
@@ -104,7 +104,7 @@
 							This is just a demo version.This is just a demo version.This is just a demo version.
 							</p>
 							<div class="ficon">
-								<a href="Middleware.html" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
+								<a href="mid_war.obj" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
 							</div>
 						</div>
 					</div>
@@ -126,7 +126,7 @@
 							This is just a demo version.This is just a demo version.This is just a demo version.
 							</p>
 							<div class="ficon">
-								<a href="ECM.html" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
+								<a href="func_ecm.obj" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
 							</div>
 						</div>
 					</div>
@@ -142,7 +142,7 @@
 							This is just a demo version.This is just a demo version.This is just a demo version.
 							</p>
 							<div class="ficon">
-								<a href="DWH.html" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
+								<a href="fun_dwh.obj" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
 							</div>
 						</div>
 					</div>
@@ -158,7 +158,7 @@
 							 This is just a demo version.This is just a demo version.This is just a demo version.
 							</p>
 							<div class="ficon">
-								<a href="Analytics.html" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
+								<a href="fun_analysis.obj" alt="">Explore</a> <i class="fa fa-long-arrow-right"></i>
 							</div>
 						</div>
 					</div>

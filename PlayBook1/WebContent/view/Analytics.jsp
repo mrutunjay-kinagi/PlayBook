@@ -24,12 +24,10 @@
 					</div>
 				</div>
 				<br /> <br /> <br /> <br />
-				<p>
-					<input name="BoxSelect[]" type="checkbox" value="sas" required><b
-						style="font-size: 30px">&nbsp;&nbsp;SAS</input> <a href="index.html"><p
-								align="center">
-								<input type="button" value="Continue" id="checkBtn"
-									class="btn btn-primary"><br />
+				<p><form action="fn_any.obj">
+					<input name="fn1" type="checkbox" value="133" required><bstyle="font-size: 30px">&nbsp;&nbsp;<b>SAS</input><p align="center">
+					<input type="submit" value="Continue" id="checkBtn" class="btn btn-primary"><br/>
+					</form>
 			</div>
 		</div>
 	</div>

@@ -26,13 +26,13 @@
 						<br/>
 						<br/>
 						<br/>
-						<p ><input name="BoxSelec
-						t[]" type="checkbox" value="muelsoft" required><b style="font-size:30px">&nbsp;&nbsp;Muelsoft</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="heavyjavalayer" required><b style="font-size:30px">&nbsp;&nbsp;Heavy Java Layer</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="wmb" required><b style="font-size:30px">&nbsp;&nbsp;WMB</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="soa" required><b style="font-size:30px">&nbsp;&nbsp;SOA</input>
-						<a href="index.html"><p align="center"><input type="button" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
-				</div>
+						<form action="fun_mid.obj">
+						<p ><input name="fn1" type="radio" value="118" required><b style="font-size:30px">&nbsp;&nbsp;Muelsoft</input>
+						<p><input name="fn2" type="radio" value="119" required><b style="font-size:30px">&nbsp;&nbsp;Heavy Java Layer</input>
+						<p><input name="fn3" type="radio" value="120" required><b style="font-size:30px">&nbsp;&nbsp;WMB</input>
+						<p><input name="fn4" type="radio" value="121" required><b style="font-size:30px">&nbsp;&nbsp;SOA</input>
+						<p align="center"><input type="submit" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
+				</form></div>
 			</div>	
 	</div>
 	<div class="container">

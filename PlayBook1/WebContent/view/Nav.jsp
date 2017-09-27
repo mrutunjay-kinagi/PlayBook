@@ -17,9 +17,9 @@
 										<i class="fa fa-pencil-square-o fa-5x"></i>
 							</div>
 							<p>
-								<button onclick="index.obj">
+								<form action="solution.obj"><button type="submit">
 									<h4>Solution								
-								</button>
+								</button></form>
 							</p>
 						</div>
 					</div>
@@ -30,10 +30,10 @@
 							<div class="icon">
 								<i class="fa fa-play-circle fa-5x"></i>
 							</div>
-							<p>
-							<button onclick="methodology.obj">
+							<p><form action="methodology.obj">
+							<button type="submit" ">
 								<h4>Methodology 								
-							</button>
+							</button></form>
 							</p>
 							
 						</div>

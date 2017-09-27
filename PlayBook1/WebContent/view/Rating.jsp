@@ -26,10 +26,12 @@
 						<br/>
 						<br/>
 						<br/>
-						<p ><input name="BoxSelect[]" type="checkbox" value="ilog" required><b style="font-size:30px">&nbsp;&nbsp;ILOG</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="gwrating" required><b style="font-size:30px">&nbsp;&nbsp;GW Rating</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="bespokerating" required><b style="font-size:30px">&nbsp;&nbsp;Bespoke Rating</input>
-						<a href="index.html"><p align="center"><input type="button" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
+						<form action="funRating.obj">
+							<p ><input name="fn1" type="radio" value="115" required><b style="font-size:30px">&nbsp;&nbsp;ILOG</input>
+							<p><input name="fn2" type="radio" value="116" required><b style="font-size:30px">&nbsp;&nbsp;GW Rating</input>
+							<p><input name="fn3" type="radio" value="117" required><b style="font-size:30px">&nbsp;&nbsp;Bespoke Rating</input>
+							<p align="center"><input type="submit" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
+						</form>
 				</div>
 			</div>	
 	</div>

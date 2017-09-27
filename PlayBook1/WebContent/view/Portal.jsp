@@ -26,10 +26,12 @@
 						<br/>
 						<br/>
 						<br/>
-						<p ><input name="BoxSelect[]" type="checkbox" value="gwportal" required><b style="font-size:30px">&nbsp;&nbsp;GW Portal</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="salesforceportal" required><b style="font-size:30px">&nbsp;&nbsp;SalesForce Portal</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="salesforceportal" required><b style="font-size:30px">&nbsp;&nbsp;Bespoke Portal</input>
-						<a href="index.html"><p align="center"><input type="button" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
+						<form action="fn11_2.obj">
+						<p ><input name="fn1" type="radio" value="103" required><b style="font-size:30px">&nbsp;&nbsp;GW Portal</input>
+						<p><input name="fn2" type="radio" value="104" required><b style="font-size:30px">&nbsp;&nbsp;SalesForce Portal</input>
+						<p><input name="fn3" type="radio" value="105" required><b style="font-size:30px">&nbsp;&nbsp;Bespoke Portal</input>
+						<a ><p align="center"><input type="submit" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
+				</form>
 				</div>
 			</div>	
 	</div>

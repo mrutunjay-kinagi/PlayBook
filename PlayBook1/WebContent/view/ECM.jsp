@@ -25,13 +25,14 @@
 						<br/>
 						<br/>
 						<br/>
-						<br/>
-						<p ><input name="BoxSelect[]" type="checkbox" value="ilog" required><b style="font-size:30px">&nbsp;&nbsp;Documentum</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="BoxSelect[]" type="checkbox" value="bespokerating" required><b style="font-size:30px">&nbsp;&nbsp;OEM</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="gwrating" required><b style="font-size:30px">&nbsp;&nbsp;Filenet</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="bespokerating" required><b style="font-size:30px">&nbsp;&nbsp;Thunderhead</input>
-						<p ><input name="BoxSelect[]" type="checkbox" value="ilog" required><b style="font-size:30px">&nbsp;&nbsp;HP Exstream</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="gwrating" required><b style="font-size:30px">&nbsp;&nbsp;OnBase</input>
-						<a href="index.html"><p align="center"><input type="button" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
+						<br/><form action="fun_ecm.obj">
+						<p ><input name="fn1" type="radio" value="122" required><b style="font-size:30px">&nbsp;&nbsp;Documentum</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="fn7" type="radio" value="128" required><b style="font-size:30px">&nbsp;&nbsp;OEM</input>
+						<p><input name="fn2" type="radio" value="123" required><b style="font-size:30px">&nbsp;&nbsp;Filenet</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="fn5" type="radio" value="126" required><b style="font-size:30px">&nbsp;&nbsp;OpenText Exstream</input>
+						<p><input name="fn3" type="radio" value="124" required><b style="font-size:30px">&nbsp;&nbsp;Thunderhead</input>
+						<p ><input name="fn4" type="radio" value="125" required><b style="font-size:30px">&nbsp;&nbsp;HP Exstream</input>
+						<p><input name="fn6" type="radio" value="127" required><b style="font-size:30px">&nbsp;&nbsp;OnBase</input>
+						<p align="center"><input type="submit" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
+						</form>
 				</div>
 			</div>	
 	</div>

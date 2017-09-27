@@ -28,8 +28,8 @@
 						<br/>
 						<br/>
 						<form action="fn1_2.obj">
-						<p ><input name="fn1" type="radio" value="siebel" required><b style="font-size:30px">&nbsp;&nbsp;Siebel</input>
-						<p><input name="fn2" type="radio" value="salesforce" required><b style="font-size:30px">&nbsp;&nbsp;SalesForce</input>
+						<p ><input name="fn1" type="radio" value="101" required><b style="font-size:30px">&nbsp;&nbsp;Siebel</input>
+						<p><input name="fn2" type="radio" value="102" required><b style="font-size:30px">&nbsp;&nbsp;SalesForce</input>
 						<p align="center"><input type="submit" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
 						</form>
 				</div>

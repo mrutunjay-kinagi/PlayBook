@@ -25,13 +25,13 @@
 						<br/>
 						<br/>
 						<br/>
-						<br/>
-						<p ><input name="BoxSelect[]" type="checkbox" value="edwbespoke" required><b style="font-size:30px">&nbsp;&nbsp;EDW Bespoke</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="terradata" required><b style="font-size:30px">&nbsp;&nbsp;Terradata</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="odi" required><b style="font-size:30px">&nbsp;&nbsp;ODI/OBIEE</input>
-						<p><input name="BoxSelect[]" type="checkbox" value="datahub" required><b style="font-size:30px">&nbsp;&nbsp;Datahub/Infocenter</input>
-						<a href="index.html"><p align="center"><input type="button" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
-				</div>
+						<br/><form action="fun_Dwh.obj">
+						<p ><input name="fn1" type="radio" value="129" required><b style="font-size:30px">&nbsp;&nbsp;EDW Bespoke</input>
+						<p><input name="fn2" type="radio" value="130" required><b style="font-size:30px">&nbsp;&nbsp;Terradata</input>
+						<p><input name="fn3" type="radio" value="131" required><b style="font-size:30px">&nbsp;&nbsp;ODI/OBIEE</input>
+						<p><input name="fn4" type="radio" value="132" required><b style="font-size:30px">&nbsp;&nbsp;Datahub/Infocenter</input>
+						<p align="center"><input type="button" value="Continue" id="checkBtn"  class="btn btn-primary"><br/>
+				</form></div>
 			</div>	
 	</div>
 	<div class="container">
