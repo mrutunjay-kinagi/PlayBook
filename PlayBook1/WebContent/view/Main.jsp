@@ -127,7 +127,7 @@ span.psw {
 								  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span> 
 								</div>
 								<div class="container">
-								  <p><label><b>Username</b></label></p>
+								  <p><label><b>Company Name</b></label></p>
 								  <input type="text" placeholder="Enter Username" name="uname" required>
 									  <p><button type="submit" class="cancelbtn"><b>Start</button>
 									</div>
@@ -145,7 +145,7 @@ span.psw {
 								  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal"></span>
 								</div>
 								<div class="container">
-								  <p><label><b>Username</b></label>
+								  <p><label><b>Company Name</b></label>
 								  <input type="text" placeholder="Enter Username" name="uname" required>
 									
 									  <p><button type="button" class="cancelbtn"><b>Load</button>
